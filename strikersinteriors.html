@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strikers decors</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            color: black;
+        }
+        body{
+            height: 100vh;
+            display: block;
+            color: black;
+           /* background: url("wall2.jpeg");
+            backdrop-filter:blur(4px);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment:fixed;*/
+            /*background:linear-gradient(to right,#37e6c0,#096e58);*/
+            background-color: #e8e5c0;
+        }
+        header{
+            height: 15%;
+            background: url("wall5.jpeg");
+            backdrop-filter:blur(10px);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position:sticky;
+            top: 0%;
+            z-index: 1;
+        }
+       /* header .logoanim{
+            height: 50px;
+            width: 50px;
+            border-top:5px solid red;
+            border-left: 8px dotted blue;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+         .logoanim2{
+            height: 25px;
+            width: 15px;
+            border-right: 10px solid rgb(0, 242, 255);
+            
+            border-top:8px solid rgb(0, 35, 98);
+            border-left: 8px ridge rgb(2, 255, 128);
+            border-radius: 50%;
+            animation: spin 1ms linear infinite;
+        }
+        @keyframes spin {
+            0%{
+                transform: rotate(0deg);
+            }
+            10%{
+                transform: skew(20px);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }*/
+        header nav a{
+            margin-left: 20px;
+            text-decoration: none;
+            font-weight: 800;
+            color: white;
+            text-shadow: 10px 5px 11px black;
+            padding: 10px;
+        }
+        header nav a:hover{
+            color:maroon
+        }
+        .dd{
+             display: block;
+             margin-top: 10px;
+        }
+        .ddcon a{
+            display: none ;
+            position: relative;
+            color: black;
+        }
+        .ddcon {
+            height: 200px;
+            background-color: #fff;
+            background: url("wall1.jpeg");
+            border-radius: 4px;
+            backdrop-filter: blur(20%);
+            display: block;
+             position: absolute;
+        }
+        .dd:hover .ddcon a{
+            display: flex;
+
+        }
+        header nav{
+            display: flex;
+            justify-content:space-around;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+        .header2{
+            height: 10%;
+        
+        }
+        article{
+            height: 70%;
+            display: flex;
+
+
+        }
+        footer{
+            height: 10%;
+        }
+       marquee{
+          background-color: #000000e0;
+          backdrop-filter: blur(20px);
+          color: white;
+          padding: 5px;
+       }
+       .header3{
+             height: 40%;
+             display: flex;
+             justify-content: space-around;
+             color: white;
+       }
+       iframe{
+        height: 100%;
+        border-radius: 8px;
+       }
+       .cont{
+        height: 50%;
+        width: 50%;
+        display: flex;
+       
+       }
+       .cont img{
+        height: 100%;
+        border-radius: 10px;
+        position: relative;
+        margin-left: -30px;
+        filter: blur(1px);
+        filter:drop-shadow(5px 5px 15px black);
+        transition: all 2s ease;
+       }
+       .cont img:hover{
+        margin-left: 10px;
+        filter:opacity(100px);
+        z-index: 1;
+        filter: blur(0px);
+       }
+       .help{
+           display: block;
+           transition: all 1s ease;
+       }
+       .ddcon2{
+            display: block;
+             position: absolute;
+       }
+       .ddcon2 {
+           display: none;
+       }
+       .help:hover .ddcon2 {
+        display: block;
+        position: absolute;
+       }
+       .help:hover{
+        margin-top: -20px;
+       }
+       .ddcon2 button{
+        border: none;
+        background-color: transparent;
+        margin-top: 5px;
+        font-weight: 600;
+        color: #fff;
+       }
+       .ddcon2 button:hover{
+        color: rgb(64, 0, 0);
+       }
+       footer img{
+        filter: drop-shadow(2px 2px 5px rgb(1, 1, 1));
+       }
+       footer a{
+        text-decoration: none;
+        font-size: 25px;
+        padding: 5px;
+        font-weight: 900;
+        color: blue;
+
+       }
+       .ani2{
+        animation: change 5s linear infinite;
+       }
+       @keyframes change {
+          0%{
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+              
+          }
+          50%{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+          }
+          80%{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+          }
+       }
+       article h1{
+           margin: 5%;
+       }
+       .minmap img{
+         margin-left: 25%;
+         border-radius: 5px;
+         filter: drop-shadow(2px 5px 35px rgba(53, 52, 52, 0.588));
+       }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <img src="jb-timely-high-resolution-logo-white-transparent.png" alt="" height="100%">
+        <div class="logoanim">
+            <div class="logoanim2"></div>
+        </div>
+        <nav>
+            <a href="">Home</a><div class="dd"><a href="">Gallery
+                <div class="ddcon"> <a href="">Dinning</a><a href="">Living hall</a><a href="">Bedroom</a><a href="">Bathroom</a></div>
+            </a></div>
+            <a href="" class="help">Help
+                <div class="ddcon2">
+                   <button>Contact</button><br>
+                   <button>AI Chat</button>
+                </div>
+            </a>
+            
+            <a href="">Our services
+
+
+            </a>
+        </nav>
+    </header>
+    <marquee behavior="" direction="">Decor your Heaven ...&#128521</marquee>
+    <br><br>
+    <div class="header3">
+        <div class="greetings">
+            <h1><span class="ani2">W</span>elcome</h1> <p> Experience the magic of great designs,Start your journey with us today..,</p>
+        </div>
+        <iframe src="loginpg.html" frameborder="0" scrolling="no"></iframe>
+    </div>
+    <br><br>
+    <article>
+        <div class="cont">
+            <img src="wall6.jpeg" alt="">
+            <img src="kitchen1.jpeg" alt="">
+            <img src="bedroom1.jpeg" alt="">
+            <img src="kitchen.jpeg" alt=""></div> 
+        <h1>Explore our curated galleries showcasing innovative designs and timeless elegance, crafted to inspire and elevate your living spaces <small><sub>-jb</sub></small></h1>   
+        </article>
+        <div class="minmap">
+            <img src="How It Works.png" alt="">
+        </div>
+        <footer>
+            <img src="fb.png" alt="">
+            <img src="github.png" alt="">
+           <a href="https://www.instagram.com/a.basker_raj/"> <img src="insta.png" alt=""></a>
+           <a href="https://www.linkedin.com/in/baskar-raj-bj/"><img src="linkedin.png" alt=""></a> 
+         <a href="#header">&Uarr;</a>
+    </footer>
+</body>
+</html>
